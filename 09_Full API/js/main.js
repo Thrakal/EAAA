@@ -35,7 +35,8 @@ async function authUser() {
         localStorage.setItem('userToken', data.data.token);
     }
 
-    document.querySelector("#jsonResponse").innerHTML = data.message;
+    document.querySelector("#jsonResponse").innerHTML = data.message +
+    "<br><br><i><b>(The user data send, can be found in the authUser() method in main.js)</b></i>";
 }
 
 
@@ -52,6 +53,12 @@ async function userGetData() {
     let data = await response.json();
 
     document.querySelector("#jsonResponse").innerHTML = data.message;
+    document.querySelector("#jsonResponse").innerHTML += 
+    "<br>" +
+    "<br>Id: " + data.data.id +
+    "<br>Name: " + data.data.name +
+    "<br>Age: " + data.data.age +
+    "<br>Is Awesome: " + data.data.isAwesome;
 }
 
 

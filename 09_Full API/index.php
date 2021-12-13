@@ -4,7 +4,8 @@
 
 <body>
     <center>
-        <div id="searchResult">- Search Results - </div>
+
+    <div id="searchResult">- Search Results - </div>
         <br>
 
         <form>

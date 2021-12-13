@@ -45,7 +45,7 @@
         if(sizeof($data) > 0) {
             // Add the data array to the json array
             $json['status'] = "success";
-            $json['message'] = "User data can be found in the 'data' variable";
+            $json['message'] = "User data can be accessed from the 'data' key in the returned JSON";
             $json['data'] = $data;
         } else {
             // Set status and message accordingly if no data was found
